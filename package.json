@@ -1,0 +1,19 @@
+{
+  "name": "express-routes-map",
+  "version": "0.0.0",
+  "description": "This modules add function that allow to easy creates nested routes in express",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/flea89/express-routes-map.git"
+  },
+  "keywords": [
+    "express",
+    "routes"
+  ],
+  "author": "Chillari Paolo",
+  "license": "BSD"
+}
