@@ -1,25 +1,3 @@
-var f = function(){
-	var i=0;
-		return function map (app,obj,route){
-		var separator;
-		route = route || '' ;
-		for (var key in obj){
-			if (obj.hasOwnProperty(key)) {
-				switch (typeof obj[key]) {
-					case 'object':
-						separator = i%2 ? '/:' : '/';
-						i=i+1;
-						app.map(app, obj[key],route + separator + key);
-						break;
-					case 'function':
-						app[key](route, obj[key]);
-						break;
-				}
-			}
-		}
-	};
-};
-
 module.exports = function (app){
 	var i=0;
 	var routes = {};
