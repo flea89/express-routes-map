@@ -20,14 +20,14 @@ http = require('http'),
 var app = express(),
 .....
 ....
-expressmap(app).defineRoutes('/bill', require('./routes/resourceA'))
-  .defineRoutes('/users',require('./routes/resourceB'))
+expressmap(app).defineRoutes('/bill', require('./routes/collectionA'))
+  .defineRoutes('/users',require('./routes/collectionB'))
   .map();
 ```
   
 The routes have to be build like the follow:<br>
 <br>
-routes/resourceA.js<br>
+routes/collectionA.js<br>
 ```
 var item = {
   get : function(req,res){
