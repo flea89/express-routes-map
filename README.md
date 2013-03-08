@@ -20,8 +20,10 @@ http = require('http'),
 var app = express(),
 .....
 ....
-expressmap(app).defineRoutes('/bill', require('./routes/collectionA'))
+expressmap(app)
+  .defineRoutes('/bill', require('./routes/collectionA'))
   .defineRoutes('/users',require('./routes/collectionB'))
+  .defineRoutes('/users',require('./routes/collectionC'))
   .map();
 ```
   
