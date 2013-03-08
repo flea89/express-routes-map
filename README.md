@@ -6,8 +6,8 @@ The module is designed to help building rest apis, that expose CRUD functionalit
 
 # Exaple
 
-GET /users   -> retrieve collection of users
-GET /users/:id -> retrieve user with id, from collection users
+GET /collection   ---> retrieve collection of resources <br>
+GET /collection/:id  ---> retrieve resource with id, from collection <br>
 
 the same philosophy for POST (create) , PUT (update), DELETE (delete)
 
@@ -20,14 +20,14 @@ http = require('http'),
 var app = express(),
 .....
 ....
-expressmap(app).defineRoutes('/bill', require('./routes/bills'))
-  .defineRoutes('/users',require('./routes/users'))
+expressmap(app).defineRoutes('/bill', require('./routes/resourceA'))
+  .defineRoutes('/users',require('./routes/resourceB'))
   .map();
 ```
   
 The routes have to be build like the follow:<br>
 <br>
-routes/bills.js<br>
+routes/resourceA.js<br>
 ```
 var item = {
   get : function(req,res){
