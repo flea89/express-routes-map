@@ -1,6 +1,6 @@
 ##  EXPRESS-ROUTES-MAP
 
-Module avaiable on npm repository.
+Module avaiable on npm registry.
 Simple module that simplifies the creation of REST APIs on Express.
 The module is designed to help building rest apis, that expose CRUD functionalities on collections of datas.
 
