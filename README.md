@@ -14,7 +14,7 @@ the same philosophy for POST (create) , PUT (update), DELETE (delete)
 ##GETTING STARTED
 
 server.js
-```
+```javascript
 var expressmap = require('express-routes-map'),
 http = require('http'),
 var app = express(),
@@ -30,7 +30,7 @@ expressmap(app)
 The routes have to be build like the follow:<br>
 <br>
 routes/collectionA.js<br>
-```
+```javascript
 var item = {
   get : function(req,res){
 		  ....
