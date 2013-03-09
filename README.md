@@ -21,9 +21,9 @@ var app = express(),
 .....
 ....
 expressmap(app)
-  .defineRoutes('/bill', require('./routes/collectionA'))
-  .defineRoutes('/users',require('./routes/collectionB'))
-  .defineRoutes('/users',require('./routes/collectionC'))
+  .defineRoutes('/collectionA', require('./routes/collectionA'))
+  .defineRoutes('/collectionB',require('./routes/collectionB'))
+  .defineRoutes('/collectionC',require('./routes/collectionC'))
   .map();
 ```
   
