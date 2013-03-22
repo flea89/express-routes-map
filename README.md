@@ -1,6 +1,6 @@
 ##  EXPRESS-ROUTES-MAP
 
-Module avaiable on npm repository.
+Module avaiable on npm registry.
 Simple module that simplifies the creation of REST APIs on Express.
 The module is designed to help building rest apis, that expose CRUD functionalities on collections of datas.
 
@@ -14,23 +14,23 @@ the same philosophy for POST (create) , PUT (update), DELETE (delete)
 ##GETTING STARTED
 
 server.js
-```
+```javascript
 var expressmap = require('express-routes-map'),
 http = require('http'),
 var app = express(),
 .....
 ....
 expressmap(app)
-  .defineRoutes('/bill', require('./routes/collectionA'))
-  .defineRoutes('/users',require('./routes/collectionB'))
-  .defineRoutes('/users',require('./routes/collectionC'))
+  .defineRoutes('/collectionA', require('./routes/collectionA'))
+  .defineRoutes('/collectionB',require('./routes/collectionB'))
+  .defineRoutes('/collectionC',require('./routes/collectionC'))
   .map();
 ```
   
 The routes have to be build like the follow:<br>
 <br>
 routes/collectionA.js<br>
-```
+```javascript
 var item = {
   get : function(req,res){
 		  ....
