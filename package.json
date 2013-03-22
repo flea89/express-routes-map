@@ -1,6 +1,6 @@
 {
   "name": "express-routes-map",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "This modules add function that allow to easy creates nested routes in express",
   "main": "index.js",
   "scripts": {
