@@ -12,7 +12,9 @@
   },
   "keywords": [
     "express",
-    "routes"
+    "routes",
+    "rest api",
+    "rest"
   ],
   "author": "Chillari Paolo",
   "license": "BSD"
